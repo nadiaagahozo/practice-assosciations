@@ -1,4 +1,4 @@
 class Meeting < ApplicationRecord
-  has_many :speakers
-  belongs_to :conferences
+  has_many :conferences
+  has_many :speakers, through: :conferences
 end
